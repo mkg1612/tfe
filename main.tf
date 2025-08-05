@@ -1,7 +1,12 @@
 provider "aws" {
   region                  = "us-east-1"
-  access_key              = "AKIAEXAMPLE"
-  secret_key              = "EXAMPLEKEY"
+provider "aws" {
+  region = "us-east-1"
+
+  # Load credentials from environment or AWS CLI profile:
+  # access_key = var.aws_access_key_id
+  # secret_key = var.aws_secret_access_key
+}
   skip_credentials_validation = true
 }
 
