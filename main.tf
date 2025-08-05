@@ -1,5 +1,7 @@
 provider "aws" {
   region                  = "us-east-1"
+  access_key              = "AKIAEXAMPLE"
+  secret_key              = "EXAMPLEKEY"
   skip_credentials_validation = true
 }
 
